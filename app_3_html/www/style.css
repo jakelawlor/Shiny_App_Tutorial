@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+* {
+/*font-family: 'Roboto Slab', serif;*/
+font-family: 'Montserrat', sans-serif;
+font-size = 1.3em;
+  
+}
+
+p {
+font-size: 18px;
+}
+
+h1 {
+font-weight: 500;
+/*font-family: 'Roboto Slab', serif;*/
+font-family: 'Montserrat', sans-serif;
+font-size: 3em;
+}
+
+h3 {
+font-weight: 400;
+/*font-family: 'Roboto Slab', serif;*/
+font-family: 'Montserrat', sans-serif;
+font-variant: small-caps;
+}
+
+
+#title {
+  background-color: PowderBlue;
+}
+
+#about {
+background-color: floralwhite;
+}
+
+#about * {
+color: DarkSlateGray;
+}
+
+
+.irs--shiny .irs-from, .irs--shiny .irs-to {
+    color: #fff;
+    text-shadow: none;
+    padding: 1px 3px;
+    background-color: PowderBlue;
+    border-radius: 3px;
+    font-size: 11px;
+    line-height: 1.333;
+}
+
+.irs--shiny .irs-bar {
+    top: 25px;
+    height: 8px;
+    border-top: 1px solid #428bca;
+    border-bottom: 1px solid #428bca;
+    background: PowderBlue;
+}
+
+

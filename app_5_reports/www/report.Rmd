@@ -1,0 +1,63 @@
+---
+title: "Parameterized Report for Shiny"
+output: pdf_document
+always_allow_html: true
+params:
+  body_size_threshold: 'NULL'
+  bill_length_threshold: 'NULL'
+  filtered_data: 'NULL'
+  full_df: 'NULL'
+---
+
+
+
+# data thresholds:
+
+**Body Size**: `r params[["body_size_threshold"]][1]`g to `r params[["body_size_threshold"]][2]`g
+
+**Bill Length**: `r params[["bill_length_threshold"]][1]`mm to `r params[["bill_length_threshold"]][2]`mm
+
+
+
+
+```{r, echo = F, out.width="60%", warning=FALSE}
+
+df %>%
+      ggplot(aes(x=bill_length_mm, 
+                 y=body_mass_g, bill_, 
+                 color=species,
+                 shape = sex)) +
+  geom_point(size = 2) +
+  geom_rect(aes(xmin = params[["bill_length_threshold"]][1],
+                xmax = params[["bill_length_threshold"]][2],
+                ymin = params[["body_size_threshold"]][1],
+                ymax = params[["body_size_threshold"]][2]),
+            color = "black", fill = "transparent") +
+  scale_color_manual(values = c("Adelie"="Magenta2",
+                     "Gentoo" = "DarkCyan",
+                     "Chinstrap" ="Purple"))+
+  theme_minimal(base_size = 16)+
+        labs(x = "Bill Length (mm)",
+           y = "Body Mass (g)") 
+            
+
+```
+
+
+```{r, echo = F, out.width="60%"}
+
+df %>%
+  ggplot(aes(x=sex, fill = sex)) +
+  geom_bar(data = params[["filtered_data"]] ,
+           stat="count") +
+  theme_minimal(base_size = 16) +
+  scale_fill_manual(values = c("male" = "darkorange1",
+                               "female" = "darkorchid",
+                               "NA" = "grey80")) +
+  labs(x=NULL, y = "Count") +
+  facet_wrap(~species)
+
+
+```
+
+
