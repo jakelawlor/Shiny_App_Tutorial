@@ -10,7 +10,7 @@ ______
 
 **App 2**: Basic Palmer Penguins Shiny App with shinydashboards layout, and interactive plot
 
-**App 3**: Basic Palmer Penguins Shiny App with custom HTML layout
+**App 3**: Basic Palmer Penguins Shiny App with custom HTML layout and integrated css
 
 **App 4**: Palmer Penguins Shiny App with reactive objects
 
