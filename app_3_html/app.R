@@ -52,7 +52,7 @@ ui <- fluidPage(
   fluidRow(id = "title",
            HTML("<center>
                 <br>
-                <h1>Palmer penguins</h1>
+                <h1>Palmer Penguins</h1>
                 <h3>Freeform HTML Layout</h3>
                 <br>
                 </center>")
