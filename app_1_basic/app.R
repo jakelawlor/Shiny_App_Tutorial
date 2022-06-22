@@ -107,8 +107,8 @@ server <- function(input, output) {
 
 
 # Run the application
-shinyApp(ui = ui, server = server)
+#shinyApp(ui = ui, server = server)
 
 # Or, Run in showcase mode: 
-#app <- shinyApp(ui = ui, server = server)
-#runApp(app, display.mode = "showcase")
+app <- shinyApp(ui = ui, server = server)
+runApp(app, display.mode = "showcase")

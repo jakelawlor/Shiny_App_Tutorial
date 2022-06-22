@@ -58,7 +58,7 @@ ui <- fluidPage(
                 </center>")
   ),
   
-  # about
+  # start about row -----
   fluidRow(id="about",
            column(1),
            column(10,
@@ -76,7 +76,7 @@ ui <- fluidPage(
                            navigate. </p>"),
                          br(),br(),br()),
                   column(1)),
-           column(2)),
+           column(2)), ## end about row -----
   
   # body 
   fluidRow(

@@ -156,4 +156,6 @@ server <- function(input, output) {
 
 # or, run in showcase mode:
 app <- shinyApp(ui = ui, server = server)
-runApp(app, display.mode = "showcase")
+runApp(app#, 
+       #display.mode = "showcase"
+       )
