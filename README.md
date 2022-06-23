@@ -18,6 +18,6 @@ ______
 
 **App 6**: Shiny app example using 2 scripts (server.r and ui.r) as opposed to single-file app (app.r)
 
-**App 7**: Volcanos of the world shiny app to add your own widget (borrowed from Hebert et al BIOS2 training[https://github.com/jakelawlor/Volcano_Shiny_App/])
+**App 7**: Volcanos of the world shiny app to add your own widget (borrowed from [Hebert et al. BIOS2 training](https://github.com/jakelawlor/Volcano_Shiny_App/)
 
 **App 8**: Upgrading your skills - examples of static and interactive Plots, Maps, and Tables to integrate full interactivity into your Shiny apps
